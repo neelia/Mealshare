@@ -89,7 +89,7 @@ textarea {
  */
 
 body {
-    margin: 0;
+   
 }
 
 /* ==========================================================================
@@ -102,6 +102,7 @@ body {
 
 a:focus {
     outline: thin dotted;
+	color: #000;
 }
 
 /**
@@ -110,8 +111,16 @@ a:focus {
 
 a:active,
 a:hover {
+	color: #000;
     outline: 0;
 }
+a:link {
+	text-decoration:none;
+	color: #000;
+	}
+.color1 {
+	color:black;
+	}
 
 /* ==========================================================================
    Typography
@@ -125,17 +134,19 @@ a:hover {
 
 h1 {
     font-size: 2em;
-    margin: 0.67em 0;
+    margin: 0;
 }
 
 h2 {
     font-size: 1.5em;
-    margin: 0.83em 0;
+    margin-left:13px;
 }
 
 h3 {
     font-size: 1.17em;
     margin: 1em 0;
+	
+	padding-left: 10px;
 }
 
 h4 {
@@ -152,6 +163,9 @@ h6 {
     font-size: 0.67em;
     margin: 2.33em 0;
 }
+p {
+	padding-left: 10px;
+	}
 
 /**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
@@ -370,7 +384,7 @@ form {
  */
 
 fieldset {
-    border: 1px solid #c0c0c0;
+    border: 1px solid ;
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
 }

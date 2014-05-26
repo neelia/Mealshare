@@ -15,9 +15,137 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    
+}
+.ui-header {
+height: 80px !important;
+background: #999 !important;
+text-align: center;
+margin-top: -8px;
+
+}
+.ui-page{
+
+	background-color: #f1f1f1;
+	margin-left: -8px;
+	margin-right: -8px;
+	
+
+
+}
+.ui-content {
+    padding: 0 !important;
+
+}
+.ui-footer {
+	width: 100%;
+	margin: 0 auto;
+	height:80px;
+	background:#999 !important;
+
+	}
+.info {
+	padding-top: 25px;
+	padding-right: 10px;
+	}
+.logo{
+	padding-top:-11px;
+	}
+#content1 {
+	
+
+	background-color: #fff;
+	border: 1px solid #eaeaea;
+	list-style: none;
+	margin: 12px;
+	padding: 12px;
+
+	}
+#content2 {
+	
+
+	background-color: #fff;
+	border: 1px solid #eaeaea;
+	list-style: none;
+	margin: 12px;
+	padding: 12px;
+	}
+	
+#content {
+	margin-left: 10px;
+	margin-top: 10px;
+	
 }
 
+/* Formular für die Registrierung und das Add Meal*/
+
+fieldset {
+	background-color: #f1f1f1;
+	border:none;
+	border-radius: 2px;
+	margin-bottom: 12px;
+	overflow: hidden;
+	padding: 0 10px;
+}
+
+ul {
+	background-color: #fff;
+	border: 1px solid #eaeaea;
+	list-style: none;
+	margin: 12px;
+	padding: 12px;
+}
+
+ul li {
+	margin: 0.5em 0;
+}
+
+label {
+	display: inline-block;
+	padding: 3px 6px;
+	text-align: right;
+	width: 150px;
+	vertical-align: top;
+}
+
+input, select, button {
+	font-size: 100%;
+}
+
+.small {
+	width: 75px;
+}
+.medium {
+	width:150px;
+}
+.large {
+	width: 250px;
+}
+textarea {
+	font: inherit;
+	width: 250px;
+}
+select {
+	font-size: 100%;
+}
+
+/*footer*/
+
+#menu {
+	float:left;
+	width: 40%;
+	padding-top: 20px;
+	
+	}
+#add {
+	float:left;
+	width: 60%;
+	padding-top: 15px;
+	
+
+	}
+
+	
 html {
     font-size: 1em;
     line-height: 1.4;

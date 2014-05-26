@@ -33,38 +33,66 @@
 		</div>
 		
 		<div class="logo">
-			<h1> MEALSHARE </h1>
+			<h1> <a href="index.html" class="color1" >MEALSHARE </a></h1>
 		</div>
 		
     </div>
 
     <div data-role="content" class="ui-content" role="main" style="min-height: 455px;">
         <!-- Inner content -->
-		<div id="content1">
-			<h3><a href="details.html" class="color1">Lorem ipsum dolor sit amet</a></h3>
+		<form method="post" action="showform.php">
+			<fieldset>
+				<h2 class="account"> Konto </h2>
+				<ul>
+					<li>
+						<label for="first_name">Vorname:</label>
+						<input type="text" id="first_name" name="first_name" class="large"/>
+					</li>
+					<li>
+						<label for="last_name">Nachname:</label>
+						<input type="text" id="last_name" name="last_name" class="large"/>
+					</li>
+					<li>
+						<label for="last_name">Stra&szlig;e, Nr.:</label>
+						<input type="text" id="last_name" name="last_name" class="large"/>
+					</li>
+					<li>
+						<label for="last_name">PLZ, Ort:</label>
+						<input type="text" id="last_name" name="last_name" class="large"/>
+					</li>
+					<li>
+						<label for="email">E-Mail:</label>
+						<input type="email" id="email" name="email" class="large"/>
+					</li>
+					<li>
+						<label for="password">Passwort:</label>
+						<input type="password" id="password" name="password"/>
+					</li>
+					<li>
+						<label for="password">Passwort erneut eingeben:</label>
+						<input type="password" id="password2" name="password2"/>
+					</li>
+				<input type="submit" class="create_profile" value="Konto erstellen">
+			</fieldset>
+		</form>
 			
-			<p> am <strong>15.06.2014</strong> <br> um <strong>15:30 Uhr</strong> <br> von <strong>Peter Pan</strong> <br> fuer <strong>4 Personen</strong></p>
+    
+             
 		</div>
-		
-	
-		<div id="content2">
-			<h3>Lorem ipsum dolor sit amet</h3>
-			
-			<p> am <strong>15.06.2014</strong> <br> um <strong>15:30 Uhr</strong> <br> von <strong>Peter Pan</strong> <br> fuer <strong>4 Personen</strong></p>
-		</div>
-	
 	</div>
-	<div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo">
+		
+    <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo">
         <!-- Inner content -->
 		<div id="menu" align="center">
 			<a href="menu.html" > <img src="img/menu.png" width="30px" height="30px"></a>
 		</div>
 			
 		<div id="add" align="center">
-			<h1> <a href="addmeal.html" class="color1">ADD MEAL </a></h1>
-	</div>
+			<h1> <a href="addmeal.html" class="color1"> ADD MEAL </a> </h1>
+		</div>
 		
     </div>
+	
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>

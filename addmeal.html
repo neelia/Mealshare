@@ -33,38 +33,75 @@
 		</div>
 		
 		<div class="logo">
-			<h1> MEALSHARE </h1>
+			<h1> <a href="index.html" class="color1" >MEALSHARE </a></h1>
 		</div>
 		
     </div>
 
     <div data-role="content" class="ui-content" role="main" style="min-height: 455px;">
         <!-- Inner content -->
-		<div id="content1">
-			<h3><a href="details.html" class="color1">Lorem ipsum dolor sit amet</a></h3>
+		<form method="post" action="showform.php">
+			<fieldset>
+				<h2 class="account"> MAHLZEIT HINZUF&Uuml;GEN </h2>
+				<ul>
+					<li>
+						<label for="title">Titel:</label>
+						<input type="text" id="title" name="title" class="large"/>
+					</li>
+					<li>
+						<label for="last_name">Beschreibung:</label>
+						<input type="text" id="description" name="description" class="large"/>
+					</li>
+					<li>
+						<label for="description">Beschreibung:</label>
+						<textarea id="description" name="description" rows="8"
+							cols="50" class="large">
+						</textarea>
+					</li>
+					<li>
+						<label for="places">freie Pl&auml;tze</label>
+						<select id="places" name="places">
+							<option value="one"> 1 </option>
+							<option value="two"> 2 </option>
+							<option value="three"> 3 </option>
+							<option value="four"> 4 </option>
+							<option value="five"> 5 </option>
+							<option value="six"> 6 </option>
+							<option value="seven"> 7 </option>
+							<option value="eight"> 8 </option>
+							<option value="nine"> 9 </option>
+							<option value="ten"> 10 </option>
+						</select>
+					</li>
+					<li>
+						<label for="date"> Datum</label>
+						<input type="date" name="date" class="large">						
+					</li>
+					<li>
+						<label for="time"> Uhrzeit</label>
+						<input type="time" name="time" class="large">						
+					</li>
+					
+				<input type="submit" class="create_profile" value="Add Meal">
+			</fieldset>
+		</form>
 			
-			<p> am <strong>15.06.2014</strong> <br> um <strong>15:30 Uhr</strong> <br> von <strong>Peter Pan</strong> <br> fuer <strong>4 Personen</strong></p>
+ 
 		</div>
-		
-	
-		<div id="content2">
-			<h3>Lorem ipsum dolor sit amet</h3>
-			
-			<p> am <strong>15.06.2014</strong> <br> um <strong>15:30 Uhr</strong> <br> von <strong>Peter Pan</strong> <br> fuer <strong>4 Personen</strong></p>
-		</div>
-	
 	</div>
-	<div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo">
+		
+    <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo">
         <!-- Inner content -->
 		<div id="menu" align="center">
 			<a href="menu.html" > <img src="img/menu.png" width="30px" height="30px"></a>
 		</div>
 			
 		<div id="add" align="center">
-			<h1> <a href="addmeal.html" class="color1">ADD MEAL </a></h1>
-	</div>
+			<h1> ADD MEAL </h1>
+		</div>
 		
     </div>
+	
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
