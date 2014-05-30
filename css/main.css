@@ -51,25 +51,16 @@ margin-top: -8px;
 .logo{
 	padding-top:-11px;
 	}
-#content1 {
+
+.wrapper{
 	
-
-	background-color: #fff;
-	border: 1px solid #eaeaea;
-	list-style: none;
-	margin: 12px;
-	padding: 12px;
-
-	}
-#content2 {
-	
-
-	background-color: #fff;
+	background-color: white;
 	border: 1px solid #eaeaea;
 	list-style: none;
 	margin: 12px;
 	padding: 12px;
 	}
+
 	
 #content {
 	margin-left: 10px;
@@ -131,13 +122,13 @@ select {
 
 /*footer*/
 
-#menu {
+.menu {
 	float:left;
 	width: 40%;
 	padding-top: 20px;
 	
 	}
-#add {
+.add {
 	float:left;
 	width: 60%;
 	padding-top: 15px;
