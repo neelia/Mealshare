@@ -19,64 +19,77 @@ textarea {
 }
 .ui-header {
 height: 80px !important;
-background: #999 !important;
+background: #fff !important;
 text-align: center;
 margin-top: -8px;
 
 }
 .ui-page{
 
-	background-color: #f1f1f1;
-	margin-left: -8px;
-	margin-right: -8px;
-	
-
+	background-color: #bbbbbb;
+	margin-left: -10px;
+	margin-right: -10px;
 
 }
 .ui-content {
-    padding: 0 !important;
+
+	padding: 0 !important;
 
 }
 .ui-footer {
+	background-color: #fff !important;
 	width: 100%;
 	margin: 0 auto;
-	height:80px;
-	background:#999 !important;
+	height:50px;
+	
+
 
 	}
 .info {
 	padding-top: 25px;
 	padding-right: 10px;
+
 	}
 .logo{
-	padding-top:-11px;
+	padding-top: 12px;
 	}
 
 .wrapper{
 	
 	background-color: white;
-	border: 1px solid #eaeaea;
+	border: 1px solid #2a2a2a;
 	list-style: none;
 	margin: 12px;
 	padding: 12px;
 	}
-
-	
-#content {
-	margin-left: 10px;
-	margin-top: 10px;
-	
+.accepted {
+	background-color:#828282;
+	border: 1px solid #2a2a2a;
+	list-style: none;
+	margin: 12px;
+	padding: 12px;
 }
+
+.offer{
+	background-color:#c2c2c2;
+	border: 1px solid #2a2a2a;
+	list-style: none;
+	margin: 12px;
+	padding: 12px;
+}
+	
+
 
 /* Formular für die Registrierung und das Add Meal*/
 
 fieldset {
-	background-color: #f1f1f1;
+	
+	
 	border:none;
 	border-radius: 2px;
 	margin-bottom: 12px;
 	overflow: hidden;
-	padding: 0 10px;
+	
 }
 
 ul {
@@ -95,7 +108,7 @@ label {
 	display: inline-block;
 	padding: 3px 6px;
 	text-align: right;
-	width: 150px;
+	margin-left:-7px;
 	vertical-align: top;
 }
 
@@ -103,14 +116,17 @@ input, select, button {
 	font-size: 100%;
 }
 
+textarea {
+	color: #777777;
+}
 .small {
-	width: 75px;
+	width: 82px;
 }
 .medium {
-	width:150px;
+	width:250px;
 }
 .large {
-	width: 250px;
+	width: 350px;
 }
 textarea {
 	font: inherit;
@@ -119,20 +135,42 @@ textarea {
 select {
 	font-size: 100%;
 }
+.create_profile {
+	background-color: #dedede;
+	border:none;
+	border-radius: 4px;
+	box-shadow: 2px 2px 2px #333;
+	cursor:pointer;
+	color: #000;
+	margin: 5px;
+	padding:8px;
+	text-shadow: 1px 1px 0px #CCC;
+}
+td {
+	
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+
 
 /*footer*/
 
 .menu {
 	float:left;
-	width: 40%;
+	width: 50%;
+	height:100%;
 	padding-top: 20px;
+
 	
 	}
 .add {
-	float:left;
-	width: 60%;
-	padding-top: 15px;
 	
+	float:right;
+	width: 49%;
+	height:94%;
+	padding-top: 25px;
+
 
 	}
 

@@ -28,70 +28,80 @@
     <div data-role="header" class="ui-header ui-bar-a" role="banner">
         
 		<!-- oberer Bereich -->
-		<div class="info">
-			<a href="info.html" > <img src="img/info.png" width="30px" height="30px" align="right"></a>
-		</div>
 		
-		<div class="logo">
-			<h1> <a href="index.html" class="color1" >MEALSHARE </a></h1>
-		</div>
+		
+		<div class="logo"><h1 class="color1">MEALSHARE</h1></div>
 		
     </div>
 
     <div data-role="content" class="ui-content" role="main" style="min-height: 455px;">
         <!-- Inner content -->
-		<form method="post" action="showform.php">
+		<form action="eingabe.php" method="post" >
 			<fieldset>
-				<h2 class="account"> Konto </h2>
+				<h2 class="account"> Anmelden </h2>
 				<ul>
 					<li>
-						<label for="first_name">Vorname:</label>
-						<input type="text" id="first_name" name="first_name" class="large"/>
+						<label for="first_name"></label>
+						<input type="text" id="first_name" name="first_name" class="large"
+						<required="required" placeholder="Vorname"/>
 					</li>
 					<li>
-						<label for="last_name">Nachname:</label>
-						<input type="text" id="last_name" name="last_name" class="large"/>
+						<label for="last_name"></label>
+						<input type="text" id="last_name" name="last_name" class="large"
+						required="required" placeholder="Name"/>
 					</li>
 					<li>
-						<label for="last_name">Stra&szlig;e, Nr.:</label>
-						<input type="text" id="last_name" name="last_name" class="large"/>
+						<label for="plz"></label>
+						<input type="text" id="plz" name="plz" class="large"
+						required="required" placeholder="PLZ"/>
 					</li>
 					<li>
-						<label for="last_name">PLZ, Ort:</label>
-						<input type="text" id="last_name" name="last_name" class="large"/>
+						<label for="street"></label>
+						<input type="text" id="street" name="street" class="medium"
+						required="required" placeholder="Stra&szlig;e"/>
+						
+						<label for="nr"></label>
+						<input type="text" id="nr" name="nr" class="small"
+						required="required" placeholder="Nr."/>
 					</li>
 					<li>
-						<label for="email">E-Mail:</label>
-						<input type="email" id="email" name="email" class="large"/>
+						<label for="email"></label>
+						<input type="email" id="email" name="email" class="large"
+						required="required" placeholder="Email"/>
 					</li>
 					<li>
-						<label for="password">Passwort:</label>
-						<input type="password" id="password" name="password"/>
+						<label for="password"></label>
+						<input type="password" id="password" name="password" class="large"
+						required="required" placeholder="Passwort"/>
 					</li>
 					<li>
-						<label for="password">Passwort erneut eingeben:</label>
-						<input type="password" id="password2" name="password2"/>
+						<label for="password"></label>
+						<input type="password" id="password2" name="password2" class="large"
+						required="required" placeholder="Passwort wiederholen"/>
 					</li>
-				<input type="submit" class="create_profile" value="Konto erstellen">
+					
+					<p> Mit dem Absenden deiner Daten akzeptierst du die <br> 
+					    Datenschutzerkl&auml;rung und AGB der Mealshare AG.
+					</p>
+					
+					<li>
+						<table>
+						<tr>
+							<td><h4><a href="datenschutz.html" class="medium">Datenschutzerkl&auml;rung</a></h4></td>
+							<td><h4><a href="datenschutz.html" class="small">AGB</a></h4></td>
+						</tr>
+						</table>
+					</li>
+					
+					<input type="submit" class="create_profile" value="Registrieren">
+					
 			</fieldset>
 		</form>
 			
-    
-             
-		</div>
+  	</div>
 	</div>
 		
-    <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo">
-        <!-- Inner content -->
-		<div class="menu" align="center">
-			<a href="menu.html" > <img src="img/menu.png" width="30px" height="30px"></a>
-		</div>
-			
-		<div class="add" align="center">
-			<h1> <a href="addmeal.html" class="color1">ADD MEAL </a></h1>
-		</div>
-		
-    </div>
+
 	
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

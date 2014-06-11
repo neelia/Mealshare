@@ -28,58 +28,95 @@
     <div data-role="header" class="ui-header ui-bar-a" role="banner">
         
 		<!-- oberer Bereich -->
-		<div class="info">
-			<a href="info.html" > <img src="img/info.png" width="30px" height="30px" align="right"></a>
-		</div>
-		
-		<div class="logo">
-			<h1> <a href="index.html" class="color1" >MEALSHARE </a></h1>
-		</div>
+		<div class="logo"><h1>Essen hinzuf&uuml;gen</h1></div>
 		
     </div>
 
     <div data-role="content" class="ui-content" role="main" style="min-height: 455px;">
-        <!-- Inner content -->
+        <!-- Inner content - Essen hinzufügen Formular -->
 		<form method="post" action="showform.php">
 			<fieldset>
-				<h2 class="account"> MAHLZEIT HINZUF&Uuml;GEN </h2>
+				
 				<ul>
 					<li>
-						<label for="title">Titel:</label>
-						<input type="text" id="title" name="title" class="large"/>
-					</li>
-					
-					<li>
-						<label for="description">Beschreibung:</label>
-						<textarea id="description" name="description" rows="8"
-							cols="50" class="large">
+						<label for="description"></label>
+						<textarea id="description" name="description" rows="3"
+						cols="50" class="large">Was gibt es leckeres zu essen?					
 						</textarea>
 					</li>
 					<li>
-						<label for="places">freie Pl&auml;tze</label>
-						<select id="places" name="places">
-							<option value="one"> 1 </option>
-							<option value="two"> 2 </option>
-							<option value="three"> 3 </option>
-							<option value="four"> 4 </option>
-							<option value="five"> 5 </option>
-							<option value="six"> 6 </option>
-							<option value="seven"> 7 </option>
-							<option value="eight"> 8 </option>
-							<option value="nine"> 9 </option>
-							<option value="ten"> 10 </option>
-						</select>
+						<table>
+						<tr>
+							<td><img src="img/days.png" width="30px" height="30px"></td>
+							<td><h2>Wann?</h2></td>
+						</tr>
+						
+						</table>
 					</li>
 					<li>
-						<label for="date"> Datum</label>
-						<input type="date" name="date" class="large">						
+						<table>
+						<tr>
+							<label for="date"></label>
+							<input type="date" name="date" class="medium">
+						</tr>	
+						</table>
 					</li>
 					<li>
-						<label for="time"> Uhrzeit</label>
-						<input type="time" name="time" class="large">						
+						<table>
+						<tr>
+							<td><img src="img/clock.png" width="30px" height="30px"></td>
+							<td><h2>Wieviel Uhr?</h2></td>
+						</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+						<tr>
+							<label for="time"></label>
+							<input type="time" name="time" class="medium">
+						</tr>
+						</table>
+					</li>
+						
+					<li>
+						<table>
+						<tr>
+							<td><img src="img/group.png" width="30px" height="30px"></td>
+							<td><h2>Wieviele k&ouml;nnen mitessen?</h2></td>
+						</tr>
+						</table>
+					</li>
+					<li>
+						<table>
+						<tr>
+							<label for="places"></label>
+							<select id="places" name="places" class="medium">
+							<option value="one"> 1 Person</option>
+							<option value="two"> 2 Person</option>
+							<option value="three"> 3 Person</option>
+							<option value="four"> 4 Person</option>
+							<option value="five"> 5 Person</option>
+							<option value="six"> 6 Person</option>
+							<option value="seven"> 7 Person</option>
+							<option value="eight"> 8 Person</option>
+							<option value="nine"> 9 Person</option>
+							<option value="ten"> 10 Person</option>
+							</select>
+						</tr>
+						</table>
+					</li>
+						
+					<li>
+						<table>
+						<tr>
+						<label for="description"></label>
+						<textarea id="description" name="description" rows="8"
+						cols="50" class="large">Beschreibung...</textarea>
+						</tr>
+						</table>
 					</li>
 					
-				<input type="submit" class="create_profile" value="Add Meal">
+				<input type="submit" class="create_profile" value="Essen hinzuf&uuml;gen">
 			</fieldset>
 		</form>
 			
@@ -90,11 +127,11 @@
     <div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo">
         <!-- Inner content -->
 		<div class="menu" align="center">
-			<a href="menu.html" > <img src="img/menu.png" width="30px" height="30px"></a>
+			<h1><a href="index.html" class="color1">fl</a></h1>
 		</div>
 			
 		<div class="add" align="center">
-			<h1> <a href="addmeal.html" class="color1">ADD MEAL </a></h1>
+			<img src="img/add.svg">
 		</div>
 		
     </div>
