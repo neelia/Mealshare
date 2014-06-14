@@ -41,14 +41,19 @@ margin-top: -8px;
 	width: 100%;
 	margin: 0 auto;
 	height:50px;
-	
-
 
 	}
+	
 .info {
 	padding-top: 25px;
 	padding-right: 10px;
 
+	}
+.back{
+	padding-top:25px;
+	padding-right: 10px; 
+	padding-left: 10px;	
+	float:left;
 	}
 .logo{
 	padding-top: 12px;
@@ -93,6 +98,7 @@ fieldset {
 }
 
 ul {
+	
 	background-color: #fff;
 	border: 1px solid #eaeaea;
 	list-style: none;
@@ -102,6 +108,7 @@ ul {
 
 ul li {
 	margin: 0.5em 0;
+
 }
 
 label {
@@ -135,7 +142,7 @@ textarea {
 select {
 	font-size: 100%;
 }
-.create_profile {
+.create_profile  {
 	background-color: #dedede;
 	border:none;
 	border-radius: 4px;
@@ -145,6 +152,18 @@ select {
 	margin: 5px;
 	padding:8px;
 	text-shadow: 1px 1px 0px #CCC;
+}
+.login {
+	background-color: #dedede;
+	border:none;
+	border-radius: 4px;
+	box-shadow: 2px 2px 2px #333;
+	cursor:pointer;
+	color: #000;
+	margin: 5px;
+	padding:8px;
+	text-shadow: 1px 1px 0px #CCC;
+	
 }
 td {
 	

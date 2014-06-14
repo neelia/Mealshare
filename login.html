@@ -38,32 +38,10 @@
         <!-- Inner content -->
 		<form action="eingabe.php" method="post" >
 			<fieldset>
-				<h2 class="account"> Anmelden </h2>
+				<h2 class="account"> Login </h2>
 				<ul>
-					<li>
-						<label for="first_name"></label>
-						<input type="text" id="first_name" name="first_name" class="large"
-						<required="required" placeholder="Vorname"/>
-					</li>
-					<li>
-						<label for="last_name"></label>
-						<input type="text" id="last_name" name="last_name" class="large"
-						required="required" placeholder="Name"/>
-					</li>
-					<li>
-						<label for="plz"></label>
-						<input type="text" id="plz" name="plz" class="large"
-						required="required" placeholder="PLZ"/>
-					</li>
-					<li>
-						<label for="street"></label>
-						<input type="text" id="street" name="street" class="medium"
-						required="required" placeholder="Stra&szlig;e"/>
-						
-						<label for="nr"></label>
-						<input type="text" id="nr" name="nr" class="small"
-						required="required" placeholder="Nr."/>
-					</li>
+					
+					
 					<li>
 						<label for="email"></label>
 						<input type="email" id="email" name="email" class="large"
@@ -74,34 +52,28 @@
 						<input type="password" id="password" name="password" class="large"
 						required="required" placeholder="Passwort"/>
 					</li>
-					<li>
-						<label for="password"></label>
-						<input type="password" id="password2" name="password2" class="large"
-						required="required" placeholder="Passwort wiederholen"/>
-					</li>
-					
-					<p> Mit dem Absenden deiner Daten akzeptierst du die <br> 
-					    Datenschutzerkl&auml;rung und AGB der Mealshare AG.
-					</p>
-					
-					<li>
-						<table>
+					<table>
 						<tr>
-							<td><h4><a href="datenschutz.html" class="medium">Datenschutzerkl&auml;rung</a></h4></td>
-							<td><h4><a href="datenschutz.html" class="small">AGB</a></h4></td>
+							<td><h4><a href="" class="regist">Passwort vergessen?</a></h4></td>
 						</tr>
-						</table>
-					</li>
+					</table>
 					
-					<input type="submit" class="create_profile" value="Registrieren">
+					<input type="submit" class="login" value="Einloggen">
 					
+					<table>
+						<tr>
+							<td><h4><a href="registrieren.html" class="regist">Ich habe noch kein Mealsharing Konto</a></h4></td>
+							
+						</tr>
+					</table>
 			</fieldset>
 		</form>
+		
 			
   	</div>
 	</div>
 		
-
+	
 	
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
