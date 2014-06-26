@@ -10,92 +10,414 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html,
-button,
-input,
-select,
-textarea {
-    
+   body{
+    margin: 0;
 }
 .ui-header {
-height: 80px !important;
-background: #fff !important;
-text-align: center;
-margin-top: -8px;
-
+    height: 68px !important;
+    background: #226fbe !important;
+    text-align: center;
 }
 .ui-page{
-
-	background-color: #bbbbbb;
-	margin-left: -10px;
-	margin-right: -10px;
-
+ background: #fff;
 }
 .ui-content {
-
 	padding: 0 !important;
 
 }
 .ui-footer {
-	background-color: #fff !important;
-	width: 100%;
-	margin: 0 auto;
-	height:50px;
+    background-color: #226fbe !important;
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    padding: 10px 0;
 
-	}
-	
-.info {
-	padding-top: 25px;
-	padding-right: 10px;
-
-	}
-.back{
-	padding-top:25px;
-	padding-right: 10px; 
-	padding-left: 10px;	
-	float:left;
-	}
-.logo{
-	padding-top: 12px;
-	}
-
-.wrapper{
-	
-	background-color: white;
-	border: 1px solid #2a2a2a;
-	list-style: none;
-	margin: 12px;
-	padding: 12px;
-	}
-.accepted {
-	background-color:#828282;
-	border: 1px solid #2a2a2a;
-	list-style: none;
-	margin: 12px;
-	padding: 12px;
 }
 
-.offer{
-	background-color:#c2c2c2;
-	border: 1px solid #2a2a2a;
-	list-style: none;
-	margin: 12px;
-	padding: 12px;
+/*Ramona Styles */
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon/icomoon.eot');
+    src:url('../fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.woff') format('woff'),
+    url('../fonts/icomoon/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-	
+h2{
+    margin: 10px 0 ;
+}
+.header-headline {
+    padding: 10px 0 0 0;
+    color: #fff;
+    margin: 0 0 0 13px;
+    float: left;
+}
+/*.detail-page .header-headline{
+    font-size: 1.4em;
+    line-height: 40px;
+    }*/
+    .back-btn-wrapper {
+        position: relative;
+        float: left;
+    }
+    .back-btn{
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url('../img/icons_white.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -288px 0;
+        margin: 12px 0 0 0;
+    }
+    .info-btn-wrapper{
+        float: right;
+        margin: 0 12px 0 0;
+    }
+    .info-btn-wrapper .info-btn{
+        background-image: url('../img/icons_white.png');
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        background-position: -187px 0;
+        display: block;
+        margin: 15px 0 0 0;
+    }
+    .meal-info-headline
+    {
+        position: relative;
+        padding: 12px;
+        background: #FFFFFF;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        border: #2a2a2a solid 0px;
+        font-size: 1em;
+        color: #226fbe;
+        margin: 0;
+    }
 
+    .meal-info-headline:after 
+    {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 15px 28px 0;
+        border-color: #FFFFFF transparent;
+        display: block;
+        width: 0;
+        z-index: 1;
+        bottom: -15px;
+        left: 14px;
+    }
+
+    .meal-info-headline:before 
+    {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 15px 28px 0;
+        border-color: #2a2a2a transparent;
+        display: block;
+        width: 0;
+        z-index: 0;
+        bottom: -16px;
+        left: 14px;
+    }
+    .meal-wrapper{	
+       background-color: white;
+       border: 1px solid #2a2a2a;
+       padding: 12px;
+   }
+   .meal-wrapper-accepted {
+       background-color:#c2c2c2;
+   }
+
+   .meal-wrapper-offer{
+       background-color:#888;
+       border: 1px solid #2a2a2a;
+   }
+   .info-page-content .meal-wrapper{
+    padding: 25px 12px 12px 12px;
+}
+.person-data-wrapper{
+    border-bottom: 1px solid #7f7f7f;
+    padding: 0 0 10px 0;
+}
+.person-data-wrapper p{
+ margin: 0;
+ padding: 0;
+}
+.person-data-wrapper .name{
+    font-weight: bold;
+}
+.meal-meta-data-content{
+    float: left;
+    max-width: 120px;
+    min-width: 120px;
+    margin: 5px 0 5px 10px;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.meal-meta-data-content-wide{
+    max-width: 100%;
+    min-width: 100%;
+}
+.icon{
+    display: block;
+    background-image: url('../img/icons.png');
+    background-repeat: no-repeat;
+}
+.meal-meta-data-icon{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    float: left;
+    margin: 0 10px 0 0;
+}
+.calendar-icon{
+    background-position: -84px 0;
+}
+.clock-icon{
+    background-position: -125px 0;
+}
+.person-icon{
+    background-position: 0 0;
+}
+.fork-icon{
+    background-position: -42px 0;
+}
+.meal-meta-data{
+ display: inline;
+ padding: 0;
+ margin: 0;
+ line-height: 38px;
+}
+.meal-meta-data-hightlighted{
+    font-weight: bold;
+}
+.meal-meta-data-person{
+    margin: 0px;
+}
+.eat-wrapper, .meal-meta-data-person-wrapper{
+    float: left;
+}
+.meal-meta-data-person-own, .name-own{
+    color: #226fbe;
+    font-weight: bold;
+}
+.description{
+    padding: 0;
+}
+.cta-btn-wrapper{
+    position: relative;
+}
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 6px 6px;
+    display: inline-block;
+    margin: 10px 0 5px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+.btn-6 {
+    color: #fff;
+    background: #226fbe;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    width: 274px;
+    text-align: center;
+}
+
+.btn-6:active {
+    top: 2px;
+}
+.btn-6j {
+    border: 4px double #226fbe;
+}
+
+.btn-6j:hover {
+    background: transparent;
+    color: #226fbe;
+}
+.btn-7 {
+    background: #226fbe;
+    color: #fff;
+    padding: 25px 60px 25px 90px;
+}
+.btn-7d {
+    overflow: hidden;
+}
+
+.btn-7d:before {
+    color: #fff;
+    z-index: 1;
+}
+
+.btn-7d:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    z-index: 0;
+    background: #226fbe;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+}
+
+.btn-7d.btn-activated:after {
+    -webkit-animation: emptyBottom 0.7s forwards;
+    -moz-animation: emptyBottom 0.7s forwards;
+    animation: emptyBottom 0.7s forwards;
+}
+
+@-webkit-keyframes emptyBottom {
+    to { 
+        height: 100%;
+    }
+}
+
+@-moz-keyframes emptyBottom {
+    to { 
+        height: 100%;
+    }
+}
+
+@keyframes emptyBottom {
+    to { 
+        height: 100%;
+    }
+}
+.btn-icon-only {
+    font-size: 0;
+    padding: 25px 30px;
+}
+
+.btn-icon-only:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 26px;
+    line-height: 54px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.btn-wide{
+    width: 100%;
+}
+.icon-remove{
+    float: right;
+}
+.icon-remove:before {
+    content: "\e00f";
+}
+.add-meal-form{
+    background: #fff;
+    padding: 12px;
+}
+.title-input{
+    width: 100%;
+    line-height: 30px;
+}
+.add-meal-form fieldset {
+ border: none;
+ margin: 11px 0;
+ padding: 0;
+ position: relative;
+}
+.add-meal-form input {
+    margin: 6px 0 0 0;
+}
+label {
+    display: inline-block;
+    padding: 9px 6px;
+    text-align: right;
+    margin-left: -7px;
+    vertical-align: top;
+}
+.seats-input, .time-input{
+    width: 80px;
+    position: absolute;
+    left: 150px;
+}
+.date-input{
+    position: absolute;
+    left: 150px;
+    max-width: 148px;
+}
+.add-meal-form textarea{
+    width: 100%;
+}
+.footer-icon-wrapper{
+    float: left;
+    margin: 0 12px;
+}
+.footer-icon-wrapper:last-child{
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -25px;
+}
+.footer-icon-wrapper .icon{
+    background-image: url('../img/icons_white.png');
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+}
+.footer-icon-wrapper .add-icon{
+   background-position: -208px 0;
+}
+.footer-icon-wrapper .home-icon{
+    background-position: -421px 0 ;
+}
+/*Ramona Styles End*/
 
 /* Formular für die Registrierung und das Add Meal*/
 
-fieldset {
-	
-	
-	border:none;
-	border-radius: 2px;
-	margin-bottom: 12px;
-	overflow: hidden;
-	
-}
+
 
 ul {
 	
@@ -110,22 +432,6 @@ ul li {
 	margin: 0.5em 0;
 
 }
-
-label {
-	display: inline-block;
-	padding: 3px 6px;
-	text-align: right;
-	margin-left:-7px;
-	vertical-align: top;
-}
-
-input, select, button {
-	font-size: 100%;
-}
-
-textarea {
-	color: #777777;
-}
 .small {
 	width: 82px;
 }
@@ -135,10 +441,7 @@ textarea {
 .large {
 	width: 350px;
 }
-textarea {
-	font: inherit;
-	width: 250px;
-}
+
 select {
 	font-size: 100%;
 }
@@ -182,7 +485,7 @@ td {
 	padding-top: 20px;
 
 	
-	}
+}
 .add {
 	
 	float:right;
@@ -191,9 +494,9 @@ td {
 	padding-top: 25px;
 
 
-	}
+}
 
-	
+
 html {
     font-size: 1em;
     line-height: 1.4;
@@ -205,7 +508,7 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
+ ::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
 }
@@ -219,7 +522,7 @@ html {
  * A better looking default horizontal rule
  */
 
-hr {
+ hr {
     display: block;
     height: 1px;
     border: 0;
@@ -233,10 +536,10 @@ hr {
  * their containers: h5bp.com/i/440
  */
 
-audio,
-canvas,
-img,
-video {
+ audio,
+ canvas,
+ img,
+ video {
     vertical-align: middle;
 }
 
@@ -244,17 +547,12 @@ video {
  * Remove default fieldset styles.
  */
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
 
 /*
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
+ textarea {
     resize: vertical;
 }
 
@@ -262,7 +560,7 @@ textarea {
    Browse Happy prompt
    ========================================================================== */
 
-.browsehappy {
+   .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
@@ -297,7 +595,7 @@ textarea {
  * Image replacement
  */
 
-.ir {
+ .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
@@ -316,7 +614,7 @@ textarea {
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 
-.hidden {
+ .hidden {
     display: none !important;
     visibility: hidden;
 }
@@ -325,7 +623,7 @@ textarea {
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
 
-.visuallyhidden {
+ .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
     height: 1px;
@@ -341,8 +639,8 @@ textarea {
  * when navigated to via the keyboard: h5bp.com/p
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+ .visuallyhidden.focusable:active,
+ .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
     margin: 0;
@@ -355,7 +653,7 @@ textarea {
  * Hide visually and from screenreaders, but maintain layout
  */
 
-.invisible {
+ .invisible {
     visibility: hidden;
 }
 
@@ -371,8 +669,8 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
+ .clearfix:before,
+ .clearfix:after {
     content: " "; /* 1 */
     display: table; /* 2 */
 }
@@ -386,7 +684,7 @@ textarea {
  * Include this rule to trigger hasLayout and contain floats.
  */
 
-.clearfix {
+ .clearfix {
     *zoom: 1;
 }
 
@@ -396,14 +694,14 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+   @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
@@ -412,7 +710,7 @@ textarea {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 
-@media print {
+   @media print {
     * {
         background: transparent !important;
         color: #000 !important; /* Black prints faster: h5bp.com/s */
@@ -437,9 +735,9 @@ textarea {
      * Don't show links for images, or javascript/internal links
      */
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
+     .ir a:after,
+     a[href^="javascript:"]:after,
+     a[href^="#"]:after {
         content: "";
     }
 
