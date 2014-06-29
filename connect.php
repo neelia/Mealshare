@@ -1,7 +1,7 @@
 <?php
 $db_host = 'localhost';
 $db_user = 'root';
-$db_pw = 'root';
+$db_pw = '';
 $db_name = 'mealshare_db';
 //Connecting to database
 $connect = mysql_connect($db_host, $db_user, $db_pw);

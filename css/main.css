@@ -19,7 +19,8 @@
     text-align: center;
 }
 .ui-page{
- background: #fff;
+   background: #fff;
+   position: relative;
 }
 .ui-content {
 	padding: 0 !important;
@@ -85,8 +86,7 @@ h2{
         display: block;
         margin: 15px 0 0 0;
     }
-    .meal-info-headline
-    {
+    .meal-info-headline {
         position: relative;
         padding: 12px;
         background: #FFFFFF;
@@ -99,8 +99,7 @@ h2{
         margin: 0;
     }
 
-    .meal-info-headline:after 
-    {
+    .meal-info-headline:after  {
         content: '';
         position: absolute;
         border-style: solid;
@@ -113,8 +112,7 @@ h2{
         left: 14px;
     }
 
-    .meal-info-headline:before 
-    {
+    .meal-info-headline:before {
         content: '';
         position: absolute;
         border-style: solid;
@@ -127,19 +125,19 @@ h2{
         left: 14px;
     }
     .meal-wrapper{	
-       background-color: white;
-       border: 1px solid #2a2a2a;
-       padding: 12px;
-   }
-   .meal-wrapper-accepted {
-       background-color:#c2c2c2;
-   }
+     background-color: white;
+     border: 1px solid #2a2a2a;
+     padding: 12px;
+ }
+ .meal-wrapper-accepted {
+     background-color:#c2c2c2;
+ }
 
-   .meal-wrapper-offer{
-       background-color:#888;
-       border: 1px solid #2a2a2a;
-   }
-   .info-page-content .meal-wrapper{
+ .meal-wrapper-offer{
+     background-color:#888;
+     border: 1px solid #2a2a2a;
+ }
+ .meal-overlay .meal-wrapper{
     padding: 25px 12px 12px 12px;
 }
 .person-data-wrapper{
@@ -147,8 +145,8 @@ h2{
     padding: 0 0 10px 0;
 }
 .person-data-wrapper p{
- margin: 0;
- padding: 0;
+   margin: 0;
+   padding: 0;
 }
 .person-data-wrapper .name{
     font-weight: bold;
@@ -189,10 +187,10 @@ h2{
     background-position: -42px 0;
 }
 .meal-meta-data{
- display: inline;
- padding: 0;
- margin: 0;
- line-height: 38px;
+   display: inline;
+   padding: 0;
+   margin: 0;
+   line-height: 38px;
 }
 .meal-meta-data-hightlighted{
     font-weight: bold;
@@ -364,10 +362,10 @@ h2{
     line-height: 30px;
 }
 .add-meal-form fieldset {
- border: none;
- margin: 11px 0;
- padding: 0;
- position: relative;
+   border: none;
+   margin: 11px 0;
+   padding: 0;
+   position: relative;
 }
 .add-meal-form input {
     margin: 6px 0 0 0;
@@ -408,10 +406,60 @@ label {
     background-size: cover;
 }
 .footer-icon-wrapper .add-icon{
-   background-position: -208px 0;
+ background-position: -208px 0;
 }
 .footer-icon-wrapper .home-icon{
     background-position: -421px 0 ;
+}
+
+
+
+/****************Overlay Styles *******************/
+.semantic-content{
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    -o-transform: translate(0, 100%);
+    -ms-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background: #ddd;
+}
+.semantic-content:target {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+    display: block\9;
+}
+.is-active.semantic-content {
+    display: block\9;
+    overflow-y: scroll;
+}
+.semantic-content .modal-inner {
+    position: absolute;
+    top: 40px;
+    z-index: 20;
+    margin: 0 5px;
+    overflow-x: hidden;
+}
+.modal-close{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+.close-icon{
+    background-size: cover;
+    background-position: -285px 0;
 }
 /*Ramona Styles End*/
 

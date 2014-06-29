@@ -16,8 +16,10 @@ session_start();
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="js/modal.js"></script>
 </head>
 <body>
 
@@ -25,7 +27,7 @@ session_start();
     <div data-role="header" class="ui-header ui-bar-a" role="banner">
       <div class="header-content clearfix">
         <h1 class="header-headline"> Newsfeed </h1>
-        <div class="info-btn-wrapper"><a href="" class="info-btn"></a></div>
+        <div class="info-btn-wrapper"><a href="info.php" class="info-btn"></a></div>
       </div>
     </div>
     <div data-role="content" class="ui-content" role="main" style="min-height: 455px;">
@@ -119,7 +121,7 @@ session_start();
      </div>
    </div>
    <div class="cta-wrapper clearfix">
-    <a class="btn btn-6 btn-6j" href="details.php">Angebot ansehen</a> 
+    <a class="btn btn-6 btn-6j" href="#mealoverlay_1">Angebot ansehen</a> 
     <?php 
     if($user_ID == 0){
      echo '<div class="cta-btn-wrapper"><p class="cta-btn btn btn-6 btn-6j">Nicht mehr mitessen</p></div>';
@@ -219,6 +221,61 @@ endwhile;
   </div>
 </div>
 </div>
+<section class="meal-overlay semantic-content" id="mealoverlay_1" tabindex="-1"
+role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+<div class="modal-inner">
+ <div class="modal-content">
+   <div class="meal-info-headline-wrapper">
+     <h2 class="meal-info-headline">Hier isst du mit!</h2>           <!--Hier steht der passende Text zum Angebot; Eingetragen zum Mitessen: "Hier isst du mit!"  Eigenes Angebot: "Dein Essensangebot" Neutrales Angebot:  "Hier könntest du mitessen!"-->
+   </div>
+   <div class="meal-wrapper meal-wrapper-accepted clearfix"> <!---Der mealwrapper wird ausgetauscht je Nach Art des Angebots - accepted - offered - default (siehe details.php)!-->
+     <div class="person-data-wrapper">
+      <p class="name">Peter Pan</p>
+      <p class="person-meta-data">Bahnhofstr. 1</p>
+      <p class="person-meta-data">78120 Furtwangen</p>
+    </div>
+    <div class="meal-info-wrapper">
+      <h2 class="meal-headline">Hackbraten mit geilen Beilagen</h2>
+      <div class="meal-meta-data-wrapper clearfix">
+        <div class="meal-meta-data-content">
+          <span class="icon meal-meta-data-icon calendar-icon"></span>
+          <p class="meal-meta-data">15.06.14</p>
+        </div>
+        <div class="meal-meta-data-content">
+          <span class="icon meal-meta-data-icon clock-icon"></span>
+          <p class="meal-meta-data">13:00 Uhr</p>
+        </div>
+        <div class="meal-meta-data-content meal-meta-data-content-wide">
+          <span class="icon meal-meta-data-icon person-icon"></span>
+          <p class="meal-meta-data">3 freie Plätze</p>
+        </div>
+        <div class="meal-meta-data-content meal-meta-data-content-wide">
+          <div class="eat-wrapper">
+            <span class="icon meal-meta-data-icon fork-icon"></span>
+            <p class="meal-meta-data meal-meta-data-hightlighted">Isst mit:</p>
+          </div>
+          <div class="meal-meta-data-person-wrapper">
+            <p class="meal-meta-data-person">Willi Wichtel</p>
+            <p class="meal-meta-data-person">Selma Selfiegeil</p>
+            <p class="meal-meta-data-person meal-meta-data-person-own">Mein Name</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cta-wrapper clearfix">
+      <div class="cta-btn-wrapper"><p class="cta-btn btn btn-6 btn-6j">Nicht mehr mitessen</p></div>
+    </div>
+    <div class="description-wrapper">
+      <p class="description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
+      </div>
+    </div>
+  </div>
+</div>
+<a href="#!" class="modal-close icon close-icon" title="Close this modal" data-close="Close"
+data-dismiss="modal"></a>
+</section>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
