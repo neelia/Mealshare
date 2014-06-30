@@ -22,7 +22,7 @@
 	<div data-role="page" data-url="/_display/" tabindex="0" class="ui-page ui-body-c ui-page-active" style="min-height: 550px;">
 		<div data-role="header" class="ui-header ui-bar-a" role="banner">
 			<div class="header-content clearfix">
-				<div class="back-btn-wrapper"><a href="" class="back-btn"></a></div>
+				<div class="back-btn-wrapper"><a href="index.php" class="back-btn"></a></div>
 				<h1 class="header-headline">Informationen</h1>
 			</div>
 		</div>
